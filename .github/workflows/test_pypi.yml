@@ -25,4 +25,4 @@ jobs:
         pip install pytest pytest-cov
     - name: Test with pytest
       run: |
-        pytest testPyParaspace.py --cov
+        pytest pyparaspace/testPyParaspace.py --cov
