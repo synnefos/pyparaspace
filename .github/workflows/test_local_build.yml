@@ -17,8 +17,9 @@ jobs:
         source env/bin/activate
         pip install maturin
         pip install pytest pytest-cov 
+        cd pyparaspace
         maturin develop
     - name: Testing the code
       run: |
         source env/bin/activate
-        pytest testPyParaspace.py --cov
+        pytest pyparaspace/testPyParaspace.py --cov
